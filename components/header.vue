@@ -9,13 +9,14 @@
         size="x-large"
       />
       <template v-slot:append>
-        <v-btn icon="mdi-dots-vertical"></v-btn>
+        <v-btn :icon="themeIcon" @click="isDark = !isDark" />
       </template>
     </v-app-bar>
   </div>
 </template>
 
 <script lang="ts" setup>
+const { isDark, themeIcon } = useMode();
 const links = [
   { title: "المنتجات", route: "/" },
   { title: "اضافة منتج", route: "/add-product" },

@@ -23,4 +23,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.v-btn {
+  letter-spacing: 0;
+}
 </style>

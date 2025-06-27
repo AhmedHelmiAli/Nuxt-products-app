@@ -1,12 +1,17 @@
 import { defineVuetifyConfiguration } from "vuetify-nuxt-module/custom-configuration";
 
+const primary = "#1A237E";
+
 export default defineVuetifyConfiguration({
   theme: {
+    defaultTheme: "dark",
     themes: {
       light: {
-        colors: {
-          primary: "#1A237E", // primary color
-        },
+        colors: { primary },
+      },
+      dark: {
+        colors: { primary },
+        dark: true,
       },
     },
   },
